@@ -93,10 +93,10 @@ export const business: BusinessConfig = {
   ],
 
   assets: {
-    hero: "/hero.jpg",
-    logo: "/logo.png",
-    about: "/about.jpg",
-    gallery: ["/gal_01.jpg", "/gal_02.jpg", "/gal_03.jpg", "/gal_04.jpg", "/gal_05.jpg", "/gal_06.jpg"],
+    hero: "/mr-ocd-hero.jpg",
+    logo: "/mr-ocd-logo.png",
+    about: "/mr-ocd-about.jpg",
+    gallery: ["/mr-ocd-gal_01.jpg", "/mr-ocd-gal_02.jpg", "/mr-ocd-gal_03.jpg", "/mr-ocd-gal_04.jpg", "/mr-ocd-gal_05.jpg", "/mr-ocd-gal_06.jpg"],
   },
 
   serviceTypes: [
