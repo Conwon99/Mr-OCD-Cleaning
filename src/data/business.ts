@@ -54,42 +54,42 @@ export type BusinessConfig = {
 };
 
 export const business: BusinessConfig = {
-  businessName: "Your Business Name — Home Services",
-  alternateName: "Your Brand",
-  tagline: "Professional home services with tidy workmanship and free quotes.",
-  gbpCategory: "Home Services",
+  businessName: "Mr OCD Cleaning",
+  alternateName: "Mr OCD Cleaning",
+  tagline: "Professional exterior cleaning — pressure washing, soft washing and roof cleaning with tidy results and free quotes.",
+  gbpCategory: "Cleaning Service",
 
-  phone: "+44 7000 000000",
-  phoneDisplay: "+44 7000 000000",
-  phoneLocal: "07000 000000",
-  trackingPhone: "+44 7000 000001",
-  trackingPhoneLocal: "07000 000001",
+  phone: "+44 7931 257558",
+  phoneDisplay: "+44 7931 257558",
+  phoneLocal: "07931 257558",
+  trackingPhone: null,
+  trackingPhoneLocal: null,
 
-  email: "hello@yourbusiness.co.uk",
-  siteUrl: "https://www.yourbusiness.co.uk",
-  facebookUrl: "https://www.facebook.com/yourbusiness",
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Your+Business+Name",
+  email: "mrocdcleaning@yahoo.com",
+  siteUrl: "https://www.mrocdcleaning.co.uk",
+  facebookUrl: "https://www.facebook.com/share/1EF4WTqtMq/",
+  googleMapsUrl: "https://maps.google.com/maps?q=55.80863036%2C-4.55137010&hl=en",
   whatsappUrl: null,
 
-  primaryCity: "Primary City",
-  secondaryCity: "Secondary City",
-  region: "Your Region",
+  primaryCity: "Johnstone",
+  secondaryCity: "Glasgow",
+  region: "Renfrewshire",
   geoRegion: "GB-SCT",
 
   address: {
-    addressLocality: "Primary City",
-    addressRegion: "Your Region",
+    addressLocality: "Johnstone",
+    addressRegion: "Renfrewshire",
     addressCountry: "GB",
+    streetAddress: "Howwood",
   },
 
-  mapCenter: [56.0, -3.5],
+  mapCenter: [55.84, -4.50],
   serviceAreaPolygon: [
-    [55.8, -4.0],
-    [55.8, -3.0],
-    [56.2, -2.8],
-    [56.4, -3.2],
-    [56.3, -3.9],
-    [55.8, -4.0],
+    [55.75, -4.85],
+    [55.75, -4.18],
+    [55.97, -4.18],
+    [55.97, -4.85],
+    [55.75, -4.85],
   ],
 
   assets: {
@@ -100,10 +100,13 @@ export const business: BusinessConfig = {
   },
 
   serviceTypes: [
-    "Primary service installation",
-    "Primary service repairs",
-    "Secondary service",
-    "Garden and outdoor improvements",
+    "Pressure washing",
+    "Soft washing",
+    "Roof cleaning",
+    "Driveway cleaning",
+    "Patio and path cleaning",
+    "Decking cleaning",
+    "Render and wall cleaning",
     "Free quotes",
   ],
 
@@ -137,20 +140,20 @@ export const brandName = () => business.alternateName;
 export const citiesLabel = () => `${business.primaryCity} & ${business.secondaryCity}`;
 
 export const homepageTitle = () =>
-  `${business.alternateName} | Home Services in ${citiesLabel()}`;
+  `${business.alternateName} | Pressure Washing & Exterior Cleaning in ${citiesLabel()}`;
 
 export const homepageDescription = () =>
   truncateMeta(
-    `${business.alternateName} provides professional home services across ${citiesLabel()} and ${business.region}. Free quotes available.`,
+    `${business.alternateName} provides professional pressure washing, soft washing and roof cleaning across ${citiesLabel()} and ${business.region}. Free quotes available.`,
   );
 
-export const homepageH1 = () => `Home Services in ${citiesLabel()}`;
+export const homepageH1 = () => `Pressure Washing & Exterior Cleaning in ${citiesLabel()}`;
 
 export const defaultKeywords = () =>
-  `home services ${business.primaryCity}, ${business.secondaryCity}, ${business.alternateName}, free quote`;
+  `pressure washing ${business.primaryCity}, exterior cleaning ${business.secondaryCity}, roof cleaning, ${business.alternateName}, free quote`;
 
 export const defaultOgImageAlt = () =>
-  `${business.alternateName} home services in ${citiesLabel()}`;
+  `${business.alternateName} — pressure washing and exterior cleaning in ${citiesLabel()}`;
 
 export const schemaImages = (): string[] => [
   absoluteUrl(business.assets.logo),

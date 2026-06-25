@@ -62,30 +62,21 @@ const breadcrumbSchema = {
           <div class="bg-white rounded-[20px] p-6 md:p-10 space-y-10">
             <div>
               <h2 class="text-gray-900 text-2xl font-bold mb-4 md:text-3xl">How {brand} Got Started</h2>
-              <!-- AI: replace with authentic business story from Facebook intro/posts -->
-              <p class="text-gray-700 leading-7">{brand} helps customers across {cities} and {business.region} with practical home and outdoor services. Replace this paragraph with the business story from the Facebook scrape.</p>
+              <p class="text-gray-700 leading-7">{brand} is a professional exterior cleaning company based in Howwood, {business.primaryCity}, providing pressure washing, soft washing and roof cleaning across {cities} and {business.region}. The business was founded with a straightforward aim: to deliver cleaning results that genuinely impress customers, turn up when promised and leave every job spotless.</p>
+              <p class="text-gray-700 leading-7 mt-4">From driveways and patios to specialist roof treatment, {brand} has built a reputation across {business.region} for reliable, high-quality exterior cleaning. With over 1,700 followers on Facebook and 18 five-star reviews with a 100% recommendation rate, the results speak for themselves.</p>
             </div>
 
             <div>
               <h2 class="text-gray-900 text-2xl font-bold mb-4 md:text-3xl">Meet the Team</h2>
-              <!-- AI: replace with real owner/team information from Facebook -->
               <div class="flex flex-col md:flex-row gap-6 items-start">
                 <div class="w-32 h-32 rounded-full bg-gray-200 shrink-0 overflow-hidden">
                   <img src={business.assets.about} alt={`${brand} team at work`} width="128" height="128" class="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <div>
-                  <h3 class="text-gray-900 text-xl font-bold mb-1">Owner Name — {brand}</h3>
-                  <p class="text-gray-600 text-sm mb-3">Owner & Home Service Specialist</p>
-                  <p class="text-gray-700 leading-7">Replace with owner bio from Facebook page intro and posts. Include credentials, experience and connection to the local area.</p>
+                  <h3 class="text-gray-900 text-xl font-bold mb-1">Peter — {brand}</h3>
+                  <p class="text-gray-600 text-sm mb-3">Owner & Exterior Cleaning Specialist</p>
+                  <p class="text-gray-700 leading-7">Peter runs {brand} from Howwood in {business.primaryCity}. Known for his meticulous standards and reliability, Peter has built the business through word of mouth and consistently excellent results. Customers regularly comment on his punctuality, professionalism and the dramatic difference in their driveways, patios and roofs after a visit. Whether cleaning a residential driveway or a commercial restaurant decking, Peter applies the same high standards to every job. He can be contacted directly on 07931 257558.</p>
                 </div>
-              </div>
-            </div>
-
-            <div>
-              <h2 class="text-gray-900 text-2xl font-bold mb-4 md:text-3xl">Video Introduction</h2>
-              <!-- AI: embed owner introduction video if available -->
-              <div class="rounded-xl bg-gray-100 border border-gray-200 p-8 text-center text-gray-500">
-                <p>Video embed placeholder — add if available from business</p>
               </div>
             </div>
 
