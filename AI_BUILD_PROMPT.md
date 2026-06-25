@@ -87,7 +87,7 @@ gal_5_{slug}.jpg  → {business-slug}-gal-05.jpg
 gal_6_{slug}.jpg  → {business-slug}-gal-06.jpg
 ```
 
-Example: for `mrocdcleaning`, files become `mrocd-hero.jpg`, `mrocd-logo.png`, etc.
+Example: for `landscapingltdpaisley`, files become `landscapingltdpaisley-hero.jpg`, `landscapingltdpaisley-logo.png`, etc.
 
 Update `assets` in `src/data/business.ts` to use the new prefixed filenames.
 
